@@ -1,0 +1,144 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-11-14T09:35:02.973Z",
+    "end": "2024-11-14T09:35:22.213Z",
+    "duration": 19240,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "14f3045f-b828-49ee-bbc9-7e229ab79165",
+      "title": "",
+      "fullFile": "cypress\\e2e\\hoveraction.cy.js",
+      "file": "cypress\\e2e\\hoveraction.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "91851e25-923d-47dd-9bb0-2d834fdd0085",
+          "title": "action",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "hover",
+              "fullTitle": "action hover",
+              "timedOut": null,
+              "duration": 8231,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://swisnl.github.io/jQuery-contextMenu/demo.html\");\ncy.xpath(\"//span[@class='context-menu-one btn btn-neutral']\").rightclick();\ncy.xpath(\"//span[normalize-space()='Copy']\").click();",
+              "err": {},
+              "uuid": "8dfc27d1-487e-4ed5-8315-c2b4ba558543",
+              "parentUUID": "91851e25-923d-47dd-9bb0-2d834fdd0085",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "8dfc27d1-487e-4ed5-8315-c2b4ba558543"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 8231,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "8282e260-9d03-4abc-a925-f1aa18e165a7",
+          "title": "action",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "hover",
+              "fullTitle": "action hover",
+              "timedOut": null,
+              "duration": 615,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://swisnl.github.io/jQuery-contextMenu/demo.html\");\ncy.xpath(\"//span[@class='context-menu-one btn btn-neutral']\").trigger(\"contextmenu\");\ncy.xpath(\"//span[normalize-space()='Copy']\").should(\"be.visible\");",
+              "err": {},
+              "uuid": "cc4226ce-64ec-4b7a-843b-ad6bf45912b5",
+              "parentUUID": "8282e260-9d03-4abc-a925-f1aa18e165a7",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "cc4226ce-64ec-4b7a-843b-ad6bf45912b5"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 615,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

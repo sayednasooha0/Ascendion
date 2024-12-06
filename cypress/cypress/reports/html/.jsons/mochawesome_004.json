@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-11-14T09:32:55.247Z",
+    "end": "2024-11-14T09:33:27.596Z",
+    "duration": 32349,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "0e608bbd-2670-461c-8b97-a77e6156f37a",
+      "title": "",
+      "fullFile": "cypress\\e2e\\clear.cy.js",
+      "file": "cypress\\e2e\\clear.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "db7fda1b-1bda-42af-bf54-2d5cc37cc9d8",
+          "title": "travels",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "action",
+              "fullTitle": "travels action",
+              "timedOut": null,
+              "duration": 21704,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://app.phptravels.com/signup\");\ncy.get(\"#first_name\").type(\"say\");\ncy.get(\"#last_name\").type(\"nas\");\ncy.get(\"#email\").type(\"sayed@gmail.com\");\ncy.get(\"#password\").type(\"1234567\");\ncy.get(\"#mobile\").type(9047715786);\ncy.get(\"div[class='p-2']\").click();\ncy.intercept('POST', \"/your/captcha/endpoint\", req => {\n  req.reply({\n    captchaPassed: true\n  });\n});",
+              "err": {},
+              "uuid": "62900511-f7f0-445e-b6d9-13115194408f",
+              "parentUUID": "db7fda1b-1bda-42af-bf54-2d5cc37cc9d8",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "62900511-f7f0-445e-b6d9-13115194408f"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 21704,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

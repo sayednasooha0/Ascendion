@@ -1,0 +1,23 @@
+{
+  "name": "new-cypress",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress-dashboard-run": "npx cypress run --record --key b865aeb7-e5c8-4d69-9bec-5e9e3a5871f1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cypress": "^13.15.1"
+  },
+  "devDependencies": {
+    "@4tw/cypress-drag-drop": "^2.2.5",
+    "@shelex/cypress-allure-plugin": "^2.40.2",
+    "allure-cypress": "^3.0.6",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-mochawesome-reporter": "^3.8.2",
+    "cypress-xpath": "^2.0.1"
+  }
+}

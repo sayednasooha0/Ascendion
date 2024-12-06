@@ -1,0 +1,344 @@
+{
+  "stats": {
+    "suites": 7,
+    "tests": 7,
+    "passes": 6,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-11-14T09:31:58.204Z",
+    "end": "2024-11-14T09:32:27.975Z",
+    "duration": 29771,
+    "testsRegistered": 7,
+    "passPercent": 85.71428571428571,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "aa9794cf-208c-4c0f-af45-1897dcc8b724",
+      "title": "",
+      "fullFile": "cypress\\e2e\\assertion.cy.js",
+      "file": "cypress\\e2e\\assertion.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "bcf86744-f21f-4946-9d00-c9684b9058da",
+          "title": "assertion",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "tests",
+              "fullTitle": "assertion tests",
+              "timedOut": null,
+              "duration": 4620,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\");\ncy.url().should(\"include\", \"orangehrmlive.com\");\ncy.url().should(\"eq\", \"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\");\ncy.url().should(\"contain\", \"orangehrm\");",
+              "err": {},
+              "uuid": "6679819b-2b8d-41e0-95c9-211beae0ac82",
+              "parentUUID": "bcf86744-f21f-4946-9d00-c9684b9058da",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "6679819b-2b8d-41e0-95c9-211beae0ac82"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4620,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "5cb95cdf-cb53-4d88-8a77-6f573f1a3e6d",
+          "title": "assertion",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "tests",
+              "fullTitle": "assertion tests",
+              "timedOut": null,
+              "duration": 901,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\");\ncy.url().should(\"include\", \"orangehrmlive.com\").should(\"eq\", \"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\").should(\"contain\", \"orangehrm\");",
+              "err": {},
+              "uuid": "61a70be4-2563-4882-a66c-cfb660ed0254",
+              "parentUUID": "5cb95cdf-cb53-4d88-8a77-6f573f1a3e6d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "61a70be4-2563-4882-a66c-cfb660ed0254"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 901,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "70824e2f-382c-4758-a098-607c63187f95",
+          "title": "assertion",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "tests",
+              "fullTitle": "assertion tests",
+              "timedOut": null,
+              "duration": 740,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\");\ncy.url().should(\"include\", \"orangehrmlive.com\").and(\"eq\", \"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\").and(\"contain\", \"orangehrm\").and(\"not.contain\", \"orangehrm1\").and(\"not.include\", \"orangehrmlive1.com\").and(\"not.eq\", \"https://opensource-demo1.orangehrmlive.com/web/index.php/auth/login\");",
+              "err": {},
+              "uuid": "ebc2c6bd-45db-4353-977e-a9a890417574",
+              "parentUUID": "70824e2f-382c-4758-a098-607c63187f95",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ebc2c6bd-45db-4353-977e-a9a890417574"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 740,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "d478384b-44fe-4132-9add-d57e99f9376d",
+          "title": "assertion",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "tests",
+              "fullTitle": "assertion tests",
+              "timedOut": null,
+              "duration": 682,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\");\ncy.title().should(\"include\", \"Orange\").and(\"eq\", \"OrangeHRM\").and(\"contain\", \"HRM\");",
+              "err": {},
+              "uuid": "e9453836-10e1-4a58-9e72-a1959a993126",
+              "parentUUID": "d478384b-44fe-4132-9add-d57e99f9376d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "e9453836-10e1-4a58-9e72-a1959a993126"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 682,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "aba50115-f41a-48d9-9109-e3eb56408ae2",
+          "title": "assertion",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "tests",
+              "fullTitle": "assertion tests",
+              "timedOut": null,
+              "duration": 1334,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\");\ncy.title().should(\"include\", \"Orange\").and(\"eq\", \"OrangeHRM\").and(\"contain\", \"HRM\");",
+              "err": {},
+              "uuid": "936388b2-a09f-44df-986d-6b9ddba81944",
+              "parentUUID": "aba50115-f41a-48d9-9109-e3eb56408ae2",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [
+            {
+              "uuid": "3cdc6b03-f1ce-456e-b47d-68b9146a424b",
+              "title": "assertion",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "tests",
+                  "fullTitle": "assertion assertion tests",
+                  "timedOut": null,
+                  "duration": 2805,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.visit(\"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\");\ncy.get(':nth-child(2) > .oxd-input-group > :nth-child(2) > .oxd-input').type(\"Admin\");",
+                  "err": {},
+                  "uuid": "0f027213-b135-4561-9dc4-d2ce054e2a0f",
+                  "parentUUID": "3cdc6b03-f1ce-456e-b47d-68b9146a424b",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "0f027213-b135-4561-9dc4-d2ce054e2a0f"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 2805,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "6b79f34a-04d8-4205-bac4-188e68d9a27e",
+              "title": "Assertions",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Checking Assertions",
+                  "fullTitle": "assertion Assertions Checking Assertions",
+                  "timedOut": null,
+                  "duration": 6105,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.visit(\"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\");\ncy.get(\"input[placeholder='Username']\").type('Admin');\ncy.get(\"input[placeholder='Password']\").type('admin123');\ncy.get(\"button[type='submit']\").click();\nlet expName = \"xyz\";\ncy.get(\".oxd-userdropdown-name\").then(x => {\n  let actName = x.text();\n  expect(actName).to.equal(expName);\n  expect(actName).to.not.equal(expName);\n  assert.equal(actName, expName);\n});",
+                  "err": {
+                    "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `input[placeholder='Username']`, but never found it.",
+                    "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `input[placeholder='Username']`, but never found it.\n    at Context.eval (webpack://new-cypress/./cypress/e2e/assertion.cy.js:56:11)",
+                    "diff": null
+                  },
+                  "uuid": "5a3ea432-74c5-4071-b1f2-89b0a30cb0cc",
+                  "parentUUID": "6b79f34a-04d8-4205-bac4-188e68d9a27e",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [],
+              "failures": [
+                "5a3ea432-74c5-4071-b1f2-89b0a30cb0cc"
+              ],
+              "pending": [],
+              "skipped": [],
+              "duration": 6105,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [
+            "936388b2-a09f-44df-986d-6b9ddba81944"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1334,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

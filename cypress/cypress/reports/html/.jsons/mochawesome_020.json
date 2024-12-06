@@ -1,0 +1,129 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 1,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-11-14T09:38:58.076Z",
+    "end": "2024-11-14T09:39:00.154Z",
+    "duration": 2078,
+    "testsRegistered": 2,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "0dc5a8ef-36b5-47dc-a49c-7a77454c93cc",
+      "title": "",
+      "fullFile": "cypress\\e2e\\apitesting\\get.cy.js",
+      "file": "cypress\\e2e\\apitesting\\get.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "302bddff-fd50-4940-b9ee-ca9cac4f2638",
+          "title": "HTTP request",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Get Call",
+              "fullTitle": "HTTP request Get Call",
+              "timedOut": null,
+              "duration": 709,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.request({\n  method: \"GET\",\n  url: \"https://gorest.co.in/public/v2/users\",\n  headers: {\n    authorization: accesstoken\n  }\n}).then(res => {\n  cy.log(JSON.stringify(res));\n  expect(res.status).to.eq(200);\n});",
+              "err": {},
+              "uuid": "2c87f68a-00ec-4cf6-9ade-f73bfea02530",
+              "parentUUID": "302bddff-fd50-4940-b9ee-ca9cac4f2638",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Get request for id",
+              "fullTitle": "HTTP request Get request for id",
+              "timedOut": null,
+              "duration": 946,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.request({\n  method: \"GET\",\n  url: \"https://gorest.co.in/public/v2/users/7522240\",\n  headers: {\n    authorization: accesstoken\n  }\n}).then(res => {\n  cy.log(JSON.stringify(res));\n  expect(res.status).to.eq(200);\n});",
+              "err": {
+                "message": "CypressError: `cy.request()` failed on:\n\nhttps://gorest.co.in/public/v2/users/7522240\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not `2xx` or `3xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: GET\nURL: https://gorest.co.in/public/v2/users/7522240\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"authorization\": \"Bearer ba7385e24c810d3fbc4c9d52d0ad24df01eb7e2fe34768d9b4e9cdca5466644a\",\n  \"user-agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Cypress/13.15.1 Chrome/118.0.5993.159 Electron/27.3.10 Safari/537.36\",\n  \"accept\": \"*/*\",\n  \"accept-encoding\": \"gzip, deflate\"\n}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 404 - Not Found\nHeaders: {\n  \"date\": \"Thu, 14 Nov 2024 09:38:59 GMT\",\n  \"content-type\": \"application/json; charset=utf-8\",\n  \"content-length\": \"32\",\n  \"connection\": \"keep-alive\",\n  \"cache-control\": \"no-cache\",\n  \"referrer-policy\": \"strict-origin-when-cross-origin\",\n  \"vary\": \"Origin\",\n  \"x-content-type-options\": \"nosniff\",\n  \"x-download-options\": \"noopen\",\n  \"x-frame-options\": \"SAMEORIGIN\",\n  \"x-permitted-cross-domain-policies\": \"none\",\n  \"x-ratelimit-limit\": \"90\",\n  \"x-ratelimit-remaining\": \"89\",\n  \"x-ratelimit-reset\": \"1\",\n  \"x-request-id\": \"f16f5f8e-66ea-476e-93ba-6c8dc4671e53\",\n  \"x-runtime\": \"0.071500\",\n  \"x-xss-protection\": \"0\",\n  \"cf-cache-status\": \"DYNAMIC\",\n  \"report-to\": \"{\\\"endpoints\\\":[{\\\"url\\\":\\\"https:\\\\/\\\\/a.nel.cloudflare.com\\\\/report\\\\/v4?s=0o9vMNFPlwQ4j11SH8e5ROp5PmcGRzdIc8MynJNjjbEhy%2FPkyP1qtYawoTTUa%2Bpk8AInrWrK4itfTMgfBXuQFxv8OQI89zugfXRafFqzwvSjzaMQFrB%2FlHp4VycAVGw%3D\\\"}],\\\"group\\\":\\\"cf-nel\\\",\\\"max_age\\\":604800}\",\n  \"nel\": \"{\\\"success_fraction\\\":0,\\\"report_to\\\":\\\"cf-nel\\\",\\\"max_age\\\":604800}\",\n  \"server\": \"cloudflare\",\n  \"cf-ray\": \"8e260820fc3e6c06-SIN\",\n  \"alt-svc\": \"h3=\\\":443\\\"; ma=86400\",\n  \"server-timing\": \"cfL4;desc=\\\"?proto=TCP&rtt=43800&sent=13&recv=12&lost=0&retrans=0&sent_bytes=6553&recv_bytes=1849&delivery_rate=131441&cwnd=245&unsent_bytes=0&cid=e5a87451ce90833e&ts=8586&x=0\\\"\"\n}\nBody: {\n  \"message\": \"Resource not found\"\n}\n\n\nhttps://on.cypress.io/request",
+                "estack": "CypressError: `cy.request()` failed on:\n\nhttps://gorest.co.in/public/v2/users/7522240\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not `2xx` or `3xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: GET\nURL: https://gorest.co.in/public/v2/users/7522240\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"authorization\": \"Bearer ba7385e24c810d3fbc4c9d52d0ad24df01eb7e2fe34768d9b4e9cdca5466644a\",\n  \"user-agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Cypress/13.15.1 Chrome/118.0.5993.159 Electron/27.3.10 Safari/537.36\",\n  \"accept\": \"*/*\",\n  \"accept-encoding\": \"gzip, deflate\"\n}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 404 - Not Found\nHeaders: {\n  \"date\": \"Thu, 14 Nov 2024 09:38:59 GMT\",\n  \"content-type\": \"application/json; charset=utf-8\",\n  \"content-length\": \"32\",\n  \"connection\": \"keep-alive\",\n  \"cache-control\": \"no-cache\",\n  \"referrer-policy\": \"strict-origin-when-cross-origin\",\n  \"vary\": \"Origin\",\n  \"x-content-type-options\": \"nosniff\",\n  \"x-download-options\": \"noopen\",\n  \"x-frame-options\": \"SAMEORIGIN\",\n  \"x-permitted-cross-domain-policies\": \"none\",\n  \"x-ratelimit-limit\": \"90\",\n  \"x-ratelimit-remaining\": \"89\",\n  \"x-ratelimit-reset\": \"1\",\n  \"x-request-id\": \"f16f5f8e-66ea-476e-93ba-6c8dc4671e53\",\n  \"x-runtime\": \"0.071500\",\n  \"x-xss-protection\": \"0\",\n  \"cf-cache-status\": \"DYNAMIC\",\n  \"report-to\": \"{\\\"endpoints\\\":[{\\\"url\\\":\\\"https:\\\\/\\\\/a.nel.cloudflare.com\\\\/report\\\\/v4?s=0o9vMNFPlwQ4j11SH8e5ROp5PmcGRzdIc8MynJNjjbEhy%2FPkyP1qtYawoTTUa%2Bpk8AInrWrK4itfTMgfBXuQFxv8OQI89zugfXRafFqzwvSjzaMQFrB%2FlHp4VycAVGw%3D\\\"}],\\\"group\\\":\\\"cf-nel\\\",\\\"max_age\\\":604800}\",\n  \"nel\": \"{\\\"success_fraction\\\":0,\\\"report_to\\\":\\\"cf-nel\\\",\\\"max_age\\\":604800}\",\n  \"server\": \"cloudflare\",\n  \"cf-ray\": \"8e260820fc3e6c06-SIN\",\n  \"alt-svc\": \"h3=\\\":443\\\"; ma=86400\",\n  \"server-timing\": \"cfL4;desc=\\\"?proto=TCP&rtt=43800&sent=13&recv=12&lost=0&retrans=0&sent_bytes=6553&recv_bytes=1849&delivery_rate=131441&cwnd=245&unsent_bytes=0&cid=e5a87451ce90833e&ts=8586&x=0\\\"\"\n}\nBody: {\n  \"message\": \"Resource not found\"\n}\n\n\nhttps://on.cypress.io/request\n    at <unknown> (http://localhost:54360/__cypress/runner/cypress_runner.js:132719:72)\n    at tryCatcher (http://localhost:54360/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (http://localhost:54360/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (http://localhost:54360/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (http://localhost:54360/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (http://localhost:54360/__cypress/runner/cypress_runner.js:1701:18)\n    at _drainQueueStep (http://localhost:54360/__cypress/runner/cypress_runner.js:2407:12)\n    at _drainQueue (http://localhost:54360/__cypress/runner/cypress_runner.js:2400:9)\n    at Async._drainQueues (http://localhost:54360/__cypress/runner/cypress_runner.js:2416:5)\n    at Async.drainQueues (http://localhost:54360/__cypress/runner/cypress_runner.js:2286:14)\nFrom Your Spec Code:\n    at Context.eval (webpack://new-cypress/./cypress/e2e/apitesting/get.cy.js:18:9)",
+                "diff": null
+              },
+              "uuid": "2683f2b1-d489-4bf6-9a2a-dd9dd6bce42d",
+              "parentUUID": "302bddff-fd50-4940-b9ee-ca9cac4f2638",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "2c87f68a-00ec-4cf6-9ade-f73bfea02530"
+          ],
+          "failures": [
+            "2683f2b1-d489-4bf6-9a2a-dd9dd6bce42d"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 1655,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

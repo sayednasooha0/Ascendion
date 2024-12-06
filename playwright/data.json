@@ -1,0 +1,73 @@
+[
+    {
+      "first_name": "Alice",
+      "last_name": "Williams",
+      "email": "alice.williams@gmail.com",
+      "password": "Pass12345",
+      "confirm_password": "Pass12345"
+    },
+    {
+      "first_name": "Bob",
+      "last_name": "Miller",
+      "email": "bob.miller@yahoo.com",
+      "password": "SecureBob789",
+      "confirm_password": "SecureBob789"
+    },
+    {
+      "first_name": "Charlie",
+      "last_name": "Brown",
+      "email": "charlie.brown@hotmail.com",
+      "password": "BrownPass456",
+      "confirm_password": "BrownPass456"
+    },
+    {
+      "first_name": "Diana",
+      "last_name": "Clark",
+      "email": "diana.clark@gmail.com",
+      "password": "DianaSecure789",
+      "confirm_password": "DianaSecure789"
+    },
+    {
+      "first_name": "Ethan",
+      "last_name": "Evans",
+      "email": "ethan.evans@outlook.com",
+      "password": "Ethan123456",
+      "confirm_password": "Ethan123456"
+    },
+    {
+      "first_name": "Fiona",
+      "last_name": "Scott",
+      "email": "fiona.scott@aol.com",
+      "password": "FionaStrong789",
+      "confirm_password": "FionaStrong789"
+    },
+    {
+      "first_name": "George",
+      "last_name": "King",
+      "email": "george.king@gmail.com",
+      "password": "KingSecurePass123",
+      "confirm_password": "KingSecurePass123"
+    },
+    {
+      "first_name": "Hannah",
+      "last_name": "Adams",
+      "email": "hannah.adams@yahoo.com",
+      "password": "HannahPassword456",
+      "confirm_password": "HannahPassword456"
+    },
+    {
+      "first_name": "Ian",
+      "last_name": "Dunn",
+      "email": "ian.dunn@hotmail.com",
+      "password": "DunnPassword789",
+      "confirm_password": "DunnPassword789"
+    },
+    {
+      "first_name": "Jasmine",
+      "last_name": "Martinez",
+      "email": "jasmine.martinez@aol.com",
+      "password": "JasmineStrong123",
+      "confirm_password": "JasmineStrong123"
+    }
+  ]
+  

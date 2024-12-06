@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-11-14T09:36:29.906Z",
+    "end": "2024-11-14T09:36:44.404Z",
+    "duration": 14498,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "2ef4b5e2-c6ed-48a6-adbe-7664eb4e24e6",
+      "title": "",
+      "fullFile": "cypress\\e2e\\loginwithpom.cy.js",
+      "file": "cypress\\e2e\\loginwithpom.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "c44862e4-27f0-4ea4-b216-2b549bfb4eb0",
+          "title": "template spec",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "pom",
+              "fullTitle": "template spec pom",
+              "timedOut": null,
+              "duration": 8942,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\");\nconst ln = new _LoginPage.default();\nln.setusername(\"admin\");\nln.setpassword(\"admin123\");\nln.clicksubmit();\nln.verifylogin();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `input[placeHolder='Username']`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `input[placeHolder='Username']`, but never found it.\n    at Login.setusername (webpack://new-cypress/./cypress/PageObject/LoginPage.js:4:11)\n    at Context.eval (webpack://new-cypress/./cypress/e2e/loginwithpom.cy.js:6:11)",
+                "diff": null
+              },
+              "uuid": "d45fa403-a8a4-41b9-93d3-c81caaff9e55",
+              "parentUUID": "c44862e4-27f0-4ea4-b216-2b549bfb4eb0",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "d45fa403-a8a4-41b9-93d3-c81caaff9e55"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 8942,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
